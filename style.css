@@ -11,9 +11,7 @@
 header{
   display: flex;
 }
-.logo{
-  border-radius: 50%;
-}
+
 .logo img{
   width: 100px;
   height: 100px;
@@ -42,6 +40,7 @@ footer{
   } 
 }
 @media screen and (width >= 800px) {
+
   header{
     display: flex;
     justify-content: space-between;
@@ -59,11 +58,24 @@ footer{
   gap: 10px;
  }
  nav{
-  display: contents;
-  display: flex;
-  gap: 20px;
+   display: contents;
+   display: flex;
+   gap: 20px;
+   
+  }
+  nav a{
+    text-decoration: none;
+  }
+  nav :nth-child(2){
+   background-color: #040171;
+  color: white;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
  }
  .bar{
   display: none;
  }
+
 }
