@@ -11,6 +11,9 @@
 header{
   display: flex;
 }
+.logo{
+  border-radius: 50%;
+}
 .logo img{
   width: 100px;
   height: 100px;
@@ -39,6 +42,12 @@ footer{
   } 
 }
 @media screen and (width >= 800px) {
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
   main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -48,5 +57,13 @@ footer{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+ }
+ nav{
+  display: contents;
+  display: flex;
+  gap: 20px;
+ }
+ .bar{
+  display: none;
  }
 }
