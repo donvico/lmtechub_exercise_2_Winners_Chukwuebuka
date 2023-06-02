@@ -6,6 +6,7 @@
 .container{
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 header{
   display: flex;
@@ -16,4 +17,32 @@ header{
 }
 nav{
   display: none;
+}
+main{
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main img{
+  width: 100%;
+}
+footer{
+  background-color: black;
+  color: white;
+}
+
+/* *media screens */
+@media screen and (width >= 450px) {
+  main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  } 
+}
+@media screen and (width >= 800px) {
+  main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  } 
+ 
 }
